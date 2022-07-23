@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CURSO</title>
+    <title>PROFES</title>
 </head>
 <body>
-    <h1>FORMULARIO DE CURSO
+    <h1>FORMULARIO DE PROFES
 
     </h1>
-    {% if form.errors %}
+    {% if formulario.errors %}
 
     <p style="color:red"> HAY ALGO MAL EN EL FORMULARIO </p>
     {% endif %}
+     
+
 
     <form action="/AppCoder/cursoFormulario/" method="POST"> {% csrf_token %} 
 
